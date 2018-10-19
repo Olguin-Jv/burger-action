@@ -1,10 +1,15 @@
+/* <== DEFINE TAMAÑO DEL BOTÓN */
+/* <== DEFINE GROSOR DE LA BARRA */
+/*----- GLOBAL SETTINGS -----*/
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,15 +19,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  /* border: 5px solid purple; */
-  background: white;
 }
+/*----- GLOBAL SETTINGS -----*/
 .burger-menu {
   position: relative;
   width: 100px;
-  height: 90px;
+  height: calc(100px * 80 / 100);
   border-radius: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +66,7 @@ body {
 }
 .burger-menu span {
   position: absolute;
-  height: 18%;
+  height: 14%;
   width: 100%;
   background: black;
   border-radius: 15px;
@@ -84,7 +86,7 @@ body {
 }
 /* --------------------------------------------------------------------- */
 .top {
-  top: 13.5%;
+  top: calc(14% * 75 / 100);
 }
 .top-animate,
 .top-deanimate {
@@ -101,24 +103,24 @@ body {
 }
 @-webkit-keyframes topAnimate {
   0% {
-    top: 13.5%;
+    top: calc(14% * 75 / 100);
     -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
   }
   100% {
-    top: calc(50% - 9%);
+    top: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(225deg);
     transform: rotateZ(225deg);
   }
 }
 @keyframes topAnimate {
   0% {
-    top: 13.5%;
+    top: calc(14% * 75 / 100);
     -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
   }
   100% {
-    top: calc(50% - 9%);
+    top: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(225deg);
     transform: rotateZ(225deg);
   }
@@ -129,31 +131,31 @@ body {
 }
 @-webkit-keyframes topDeAnimate {
   0% {
-    top: calc(50% - 9%);
+    top: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(225deg);
     transform: rotateZ(225deg);
   }
   100% {
-    top: 13.5%;
+    top: calc(14% * 75 / 100);
     -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
   }
 }
 @keyframes topDeAnimate {
   0% {
-    top: calc(50% - 9%);
+    top: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(225deg);
     transform: rotateZ(225deg);
   }
   100% {
-    top: 13.5%;
+    top: calc(14% * 75 / 100);
     -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
   }
 }
 /* --------------------------------------------------------------------- */
 .middle {
-  top: calc(50% - 9%);
+  top: calc(50% - calc(14% / 2));
 }
 .middle-animate,
 .middle-deanimate {
@@ -214,7 +216,7 @@ body {
 }
 /* --------------------------------------------------------------------- */
 .bottom {
-  bottom: 13.5%;
+  bottom: calc(14% * 75 / 100);
 }
 .bottom-animate,
 .bottom-deanimate {
@@ -231,24 +233,24 @@ body {
 }
 @-webkit-keyframes bottomAnimate {
   0% {
-    bottom: 13.5%;
+    bottom: calc(14% * 75 / 100);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    bottom: calc(50% - 9%);
+    bottom: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(-225deg);
     transform: rotateZ(-225deg);
   }
 }
 @keyframes bottomAnimate {
   0% {
-    bottom: 13.5%;
+    bottom: calc(14% * 75 / 100);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    bottom: calc(50% - 9%);
+    bottom: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(-225deg);
     transform: rotateZ(-225deg);
   }
@@ -259,26 +261,25 @@ body {
 }
 @-webkit-keyframes bottomDeAnimate {
   0% {
-    bottom: calc(50% - 9%);
+    bottom: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(-225deg);
     transform: rotateZ(-225deg);
   }
   100% {
-    bottom: 13.5%;
+    bottom: calc(14% * 75 / 100);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
 @keyframes bottomDeAnimate {
   0% {
-    bottom: calc(50% - 9%);
+    bottom: calc(50% - calc(14% / 2));
     -webkit-transform: rotateZ(-225deg);
     transform: rotateZ(-225deg);
   }
   100% {
-    bottom: 13.5%;
+    bottom: calc(14% * 75 / 100);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
-/* --------------------------------------------------------------------- */
